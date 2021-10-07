@@ -1,0 +1,111 @@
+@font-face {
+  font-family: nunito;
+  src: url("nunito.ttf");
+}
+
+body {
+  font-family: nunito;
+  background-color: rgb(39, 194, 194);
+}
+
+.row h1 {
+  font-weight: bolder;
+}
+
+#dna__icon {
+  display: inline-block;
+  animation: spin 1.6s linear infinite;
+}
+
+#landingImage {
+  width: 50vw;
+  height: 55vh;
+}
+
+.row p {
+  padding-left: 24px;
+}
+/* ANIMATIONS GO HERE */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.other-services {
+  background-color: white;
+  border-radius: 7px;
+  height: 32vh;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  box-shadow: 2px 2px grey;
+  cursor: pointer;
+}
+
+.other-services:hover {
+  box-shadow: 4px 4px gray;
+  transform: scale(1.04);
+}
+
+.service__icon {
+  border-radius: 50%;
+  width: 100px;
+  margin-top: 10px;
+  height: 100px;
+  background-color: silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service__desc {
+}
+
+
+
+footer{
+  background-color: #222222;
+  height: 35vh;
+  color: aliceblue;
+  width: 120vw;
+
+}
+
+#social__icons{
+  color:rgba(255, 255, 255, 0.904);
+}
+#social__icons>a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.904);;
+}
+
+
+
+#social__icons>a{
+  padding: 6px;
+}
+
+#social__icons>i:hover{
+  color: white;
+  transform: scale(1.02);
+  cursor:pointer;
+}
+
+
+/* MEDIA QUERIES FOR SMALLER SCREENS LIKE MOBILE DEVICES */
+@media screen and (max-width: 480px) {
+  #landingImage {
+    width: 300px;
+    height: 160px;
+  }
+  .other-services{
+      width: 75vw;
+      margin-top: 27px;
+  }
+}
