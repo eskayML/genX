@@ -2,4 +2,4 @@
 UI design of a fictional website
 
 
-###live url:  https://kalusam1.github.io/genX/
+### live url:  https://eskayml.github.io/genX/
